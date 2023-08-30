@@ -22,7 +22,7 @@ Connexion par defaut :
     - DB Name : appelclasse_E
     - User : root
     - Pass : 
-
+    
 ATTENTION, si vous changez les identifiants, il faut également les modifer dans les fichiers suivants : 
 
     - model/db.php
