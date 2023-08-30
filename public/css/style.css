@@ -1,0 +1,274 @@
+body {
+  background: #f2f2f2;
+  overflow-x: hidden;
+}
+h1{
+  font-family: 'Cursive standard Bold', sans-serif;
+}
+.h5Cursive{
+  font-family: 'Cursive standard', sans-serif;
+}
+@font-face {
+  font-family: 'Cursive standard';
+  src: url('../fonts/Cursive standard.eot');
+  src: url('../fonts/Cursive standard.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Cursive standard.svg#Cursive%20standard') format('svg'),
+       url('../fonts/Cursive standard.otf') format('otf'),
+       url('../fonts/Cursive standard.ttf') format('ttf'),
+       url('../fonts/Cursive standard.woff') format('woff'),
+       url('../fonts/Cursive standard.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Cursive standard Bold';
+  src: url('../fonts/Cursive standard Bold.eot');
+  src: url('../fonts/Cursive standard Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Cursive standard Bold.otf') format('otf'),
+       url('../fonts/Cursive standard Bold.ttf') format('ttf'),
+       url('../fonts/Cursive standard Bold.svg#Cursive%20standard%20Bold') format('svg'),
+       url('../fonts/Cursive standard Bold.woff') format('woff'),
+       url('../fonts/Cursive standard Bold.woff2') format('woff2');
+}
+
+.center{
+    text-align: center;
+    vertical-align: middle;
+}
+.spacing3{
+  margin-bottom: 3px;
+}
+.spacingL10{
+  margin-left: 10px;
+}
+
+.colorEditClasse{
+  color: #4CAF50;
+}
+.btn-classe {
+  color: #fff;
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+.colorEditVacance{
+  color: #FF9800;
+}
+.btn-vacance {
+  color: #fff;
+  background-color: #FF9800;
+  border-color: #FF9800;
+}
+.colorEditEleve{
+  color: #42A5F5;
+}
+.btn-eleve {
+  color: #fff;
+  background-color: #42A5F5;
+  border-color: #42A5F5;
+}
+
+
+h7 {
+  font-size: 0.70em;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+
+  display: block;
+}
+
+.bgPresent{
+  background-color: lightgreen;
+}
+.bgAbsent{
+  background-color: lightpink;
+}
+.imgClasse{
+  width : 50%;
+  opacity: 80%;
+}
+.imgEleve{
+  width : 50%;
+  opacity: 70%;
+  margin-top: 40px;
+}
+
+
+.btn-circle {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 20px;
+  }
+  .btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+  }
+  .btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+  }
+
+  
+  /* FLOATING BUTTON MENU */
+@-webkit-keyframes come-in {
+  0% {
+    -webkit-transform: translatey(100px);
+            transform: translatey(100px);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateX(-50px) scale(0.4);
+            transform: translateX(-50px) scale(0.4);
+  }
+  70% {
+    -webkit-transform: translateX(0px) scale(1.2);
+            transform: translateX(0px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translatey(0px) scale(1);
+            transform: translatey(0px) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes come-in {
+  0% {
+    -webkit-transform: translatey(100px);
+            transform: translatey(100px);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateX(-50px) scale(0.4);
+            transform: translateX(-50px) scale(0.4);
+  }
+  70% {
+    -webkit-transform: translateX(0px) scale(1.2);
+            transform: translateX(0px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translatey(0px) scale(1);
+            transform: translatey(0px) scale(1);
+    opacity: 1;
+  }
+}
+
+.floating-container {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  margin: 35px 25px;
+  z-index: 100;
+}
+.floating-container:hover {
+  height: 255px;
+}
+.floating-container:hover .floating-button {
+  box-shadow: 0 10px 25px rgba(44, 179, 240, 0.6);
+  -webkit-transform: translatey(5px);
+          transform: translatey(5px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.floating-container:hover .element-container .float-element:nth-child(1) {
+  -webkit-animation: come-in 0.4s forwards 0.2s;
+          animation: come-in 0.4s forwards 0.2s;
+}
+.floating-container:hover .element-container .float-element:nth-child(2) {
+  -webkit-animation: come-in 0.4s forwards 0.4s;
+          animation: come-in 0.4s forwards 0.4s;
+}
+.floating-container:hover .element-container .float-element:nth-child(3) {
+  -webkit-animation: come-in 0.4s forwards 0.6s;
+          animation: come-in 0.4s forwards 0.6s;
+}
+.floating-container .floating-button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #2cb3f0;
+  bottom: 0;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+  z-index: 100;
+  box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.floating-container .float-element {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 15px auto;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+.floating-container .float-element .material-icons {
+  vertical-align: middle;
+  font-size: 16px;
+}
+.floating-container .float-element:nth-child(1) {
+  background: #42A5F5;
+  box-shadow: 0 20px 20px -10px rgba(66, 165, 245, 0.5);
+}
+.floating-container .float-element:nth-child(2) {
+  background: #4CAF50;
+  box-shadow: 0 20px 20px -10px rgba(76, 175, 80, 0.5);
+}
+.floating-container .float-element:nth-child(3) {
+  background: #FF9800;
+  box-shadow: 0 20px 20px -10px rgba(255, 152, 0, 0.5);
+}
+.float-element{
+  cursor: pointer;
+}
+
+
+#formDate {
+  display: inherit;
+  opacity: 0;
+  width: 0px;
+  -webkit-transition: 1s;
+          transition: 1s;
+}
+
+#btnChange{
+  margin-left: -10%;
+  margin-top: 4px;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
+}
+
+.myAlert{
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
